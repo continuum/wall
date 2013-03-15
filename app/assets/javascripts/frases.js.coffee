@@ -83,10 +83,7 @@ window.renderer =
     (new Date().getTime() - @lastRefreshTime) > @refreshInterval()
   frame: ->
     if @forceRefreshOnNextFrame || @elapsedTimeGreaterThanRefreshInterval()
-      console.log('refresh')
       @refresh()
-    else
-      console.log('idle')
   refresh: ->
     frase = frases.siguiente()
     @update($('#frase_completa'), frase.texto)
