@@ -1,0 +1,25 @@
+%section#board
+  %article.frase
+    %h1#frase_completa
+    %h2#frase_autor
+  %article.actions
+    %ul
+      %li
+        %a.buscar.someClass{:href => "javascript:void(0);", :title => "Buscar Frases"} Buscar Frases
+      %li
+        %a.agregar.someClass{:href => "javascript:void(0);", :title => "Agregar Nueva Frase"} Agregar Frases
+      %li
+        %a.comentar.someClass{:href => "javascript:void(0);", :title => "Comentarios"} Commentarios
+      %li
+        %a.otrafrase.someClass{:href => "javascript:void(0);", :title => "Cambiar Frase"} Otra Frase
+%section#hidden-sections
+  %article#search-box
+    %input{:placeholder => "Nombre del compa&ntilde;ero", :type => "text"}/
+    %input{:type => "submit", :value => "Buscar"}/
+  %article#adding-box
+    %a.open-select{:href => "javascript:void(0);"}
+    %input.who{:placeholder => "Quien lo dijo", :type => "text"}/
+    %input{:placeholder => "Que dijo", :type => "text"}/
+    %input{:type => "submit", :value => "Agregar"}/
+  %article#comments-box
+    %h3 No hay comentarios
