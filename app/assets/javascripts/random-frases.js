@@ -34,7 +34,7 @@ function _random(tope, last_one) {
   var rd = _random(cl.continuum.wall.frasesWall.length, last_phrase);
      showFrases(rd, true)
      last_phrase = rd;
-    }, cl.continuum.wall.RANDOM_FRASES);
+    }, cl.continuum.wall.REFRESH);
   }
 
   $(document).ready(function () {

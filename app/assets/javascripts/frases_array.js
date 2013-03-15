@@ -2,7 +2,7 @@ cl = {};
 cl.continuum = {};
 
 cl.continuum.wall = {
-    RANDOM_FRASES:10000,
+    REFRESH:10000,
     frasesWall:[
         {texto:"Estoy m&aacute;s tieso que la chucha", autor:"Mauro"},
         {texto:"Se la dej&eacute; puesta",autor:"Abraham a Jano"},
