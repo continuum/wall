@@ -84,6 +84,8 @@ GEM
       activesupport (>= 3.1, < 4.1)
       haml (>= 3.1, < 4.1)
       railties (>= 3.1, < 4.1)
+    heroku-deflater (0.4.1)
+      rack (~> 1.4.5)
     hike (1.2.1)
     hpricot (0.8.6)
     html2haml (1.0.1)
@@ -202,6 +204,7 @@ DEPENDENCIES
   email_spec (>= 1.4.0)
   factory_girl_rails (>= 4.2.0)
   haml-rails (>= 0.4)
+  heroku-deflater
   html2haml (>= 1.0.1)
   jquery-rails
   memcachier
