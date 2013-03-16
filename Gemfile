@@ -8,7 +8,6 @@ group :assets do
 end
 gem 'jquery-rails'
 gem "unicorn", ">= 4.3.1"
-gem "pg", ">= 0.14.1"
 gem "haml-rails", ">= 0.4"
 gem "html2haml", ">= 1.0.1", :group => :development
 gem "rspec-rails", ">= 2.12.2", :group => [:development, :test]
