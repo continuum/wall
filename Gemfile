@@ -22,3 +22,4 @@ gem "binding_of_caller", ">= 0.7.1", :group => :development, :platforms => [:mri
 gem "dalli"
 gem "memcachier", :group => :production
 gem "heroku-deflater", :group => :production
+gem "mongoid", "~> 3.0.0"
