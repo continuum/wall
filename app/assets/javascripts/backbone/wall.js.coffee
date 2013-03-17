@@ -21,13 +21,27 @@ class Wall.App extends Backbone.Marionette.Application
     @actions = new Wall.Views.ActionsView()
 
   frasesIndex: =>
-    @hiddenSections.close()
+    @closeAll()
     @frase.startPresentation()
 
   showAddingBox: =>
-    @frase.close()
+    @closeAll()
     @addingBox = new Wall.Views.AddingBox(collection: @frases)
     @hiddenSections.show @addingBox
+
+  searchBox: =>
+    @closeAll()
+    @searchBoxView = new Wall.Views.SearchBox(collection: @frases)
+    @hiddenSections.show @searchBoxView
+
+  commentsBox: =>
+    @closeAll()
+    @commentsBoxView = new Wall.Views.CommentsBox()
+    @hiddenSections.show @commentsBoxView
+
+  closeAll: =>
+    @frase.close()
+    @hiddenSections.close()
 
 
 window.wallApp = wallApp = new Wall.App()
