@@ -25,3 +25,4 @@ gem "dalli"
 gem "memcachier", :group => :production
 gem "heroku-deflater", :group => :production
 gem "mongoid", "~> 3.0.0"
+gem "letter_opener", :group => :development
