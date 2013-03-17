@@ -28,7 +28,7 @@ class Wall.App extends Backbone.Marionette.Application
     @frase.close()
     @addingBox = new Wall.Views.AddingBox(collection: @frases)
     @hiddenSections.show @addingBox
-    return true
+
 
 window.wallApp = wallApp = new Wall.App()
 

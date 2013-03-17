@@ -39,10 +39,6 @@
     = f.text_field :autor, :placeholder => "Quien lo dijo", class: "who"
     = f.text_field :texto, :placeholder => "Que dijo"
     = f.submit "Agregar"
-    /
-      %input.who{:placeholder => "Quien lo dijo", :type => "text"}/
-      %input{:placeholder => "Que dijo", :type => "text"}/
-      %input{:type => "submit", :value => "Agregar"}/
 
 %script{type: "text/template", id: "comments-box-template"}
   %h3 No hay comentarios
