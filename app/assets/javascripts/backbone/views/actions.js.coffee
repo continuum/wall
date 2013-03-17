@@ -10,4 +10,4 @@ class Wall.Views.ActionsView extends Backbone.View
 
     wallApp.frase.forceRefreshOnNextFrame = true
     wallApp.wallappRouter.navigate("#", true)
-    #wallApp.frase.refreshIntervalPerCharacter *= .75
+    wallApp.frase.refreshIntervalPerCharacter *= .75
