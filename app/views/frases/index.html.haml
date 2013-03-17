@@ -1,8 +1,8 @@
 %section#board
-  %article.frase
-    %h1#frase_completa
-    %h2#frase_autor
-  %article.actions
+
+  %article.frase#frase
+
+  %article.actions#actions
     %ul
       %li
         %a.buscar.someClass{:href => "javascript:void(0);", :title => "Buscar Frases"} Buscar Frases
@@ -12,6 +12,7 @@
         %a.comentar.someClass{:href => "javascript:void(0);", :title => "Comentarios"} Commentarios
       %li
         %a.otrafrase.someClass{:href => "javascript:void(0);", :title => "Cambiar Frase"} Otra Frase
+
 %section#hidden-sections
   %article#search-box
     %input{:placeholder => "Nombre del compa&ntilde;ero", :type => "text"}/
@@ -23,3 +24,9 @@
     %input{:type => "submit", :value => "Agregar"}/
   %article#comments-box
     %h3 No hay comentarios
+
+%script{type: "text/template", id: "frase-template"}
+  %h1#frase_completa
+    <%= texto %>
+  %h2#frase_autor
+    <%= autor %>

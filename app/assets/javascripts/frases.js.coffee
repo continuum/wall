@@ -3,7 +3,9 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 window.frases = []
+
 window.frases.ultima = null
+
 window.frases.siguiente = ->
   f = @[Math.floor(Math.random() * @length)]
   if f != @ultima then @ultima = f else @siguiente()
