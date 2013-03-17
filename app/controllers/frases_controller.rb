@@ -8,4 +8,13 @@ class FrasesController < ApplicationController
     end
   end
 
+  def create
+    @frase = Frase.create(params[:frase])
+    respond_to do |format|
+      format.json do
+        render :json => @frase
+      end
+    end
+  end
+
 end

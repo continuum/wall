@@ -21,10 +21,13 @@ class Wall.App extends Backbone.Marionette.Application
     @actions = new Wall.Views.ActionsView()
 
   frasesIndex: =>
+    @hiddenSections.close()
     @frase.startPresentation()
 
   showAddingBox: =>
-    console.log "show adding Box"
+    @frase.close()
+    @addingBox = new Wall.Views.AddingBox(collection: @frases)
+    @hiddenSections.show @addingBox
     return true
 
 window.wallApp = wallApp = new Wall.App()
@@ -38,7 +41,7 @@ wallApp.addInitializer (options) ->
   wallApp.initViews()
 
 wallApp.addInitializer (options) ->
-  wallappRouter = new Wall.Routers.WallAppRouter
+  @wallappRouter = new Wall.Routers.WallAppRouter
     controller: wallApp
 
   Backbone.history.start()

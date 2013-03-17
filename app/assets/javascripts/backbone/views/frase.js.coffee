@@ -2,7 +2,8 @@ class Wall.Views.Frase extends Marionette.ItemView
   template: "#frase-template"
 
   initialize: (options)->
-    @model = new Wall.Models.Frase(texto: "", autor: "")
+    @model = @collection.last()
+    @model ?= new Wall.Models.Frase(texto: "", autor: "")
     @collection.on "reset", @renderNextModel
 
   renderNextModel: =>
