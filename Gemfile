@@ -1,6 +1,6 @@
 ruby '2.0.0'
 source 'https://rubygems.org'
-gem 'rails', '3.2.12'
+gem 'rails', '3.2.13'
 group :assets do
   gem 'compass-rails'
   gem 'sass-rails',   '~> 3.2.3'
@@ -26,3 +26,4 @@ gem "memcachier", :group => :production
 gem "heroku-deflater", :group => :production
 gem "mongoid", "~> 3.0.0"
 gem "letter_opener", :group => :development
+gem "newrelic_rpm"
