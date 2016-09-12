@@ -11,10 +11,8 @@ Pre-requisitos
 Setup
 -----
 
-$ createuser wall -s -P -h localhost # dejar password en blanco
-$ rake db:create:all
-$ rake db:migrate
-$ rails server
+$ gem install bundler
+$ bundle exec rails server
 
 Deploy
 ======
@@ -25,4 +23,4 @@ $ heroku git:remote -a continuumwall
 
 Luego, para hacer deploy:
 
-$ rake deploy
+$ git push heroku master
